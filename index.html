@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Guessing Game by Jimin Sung</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="rules.html">Game Manual</a></li>
+        </ul>
+        <h3>Welcome to the Guessing Game by Jimin</h3>
+      </header>
+      
+      <div class="jumbotron">
+        <h1>Can you beat the game?</h1>
+        <div class='main-box'></div>
+
+        <form>
+          <div class="form-group">
+            <h3> <label for="guess">Hit me with your best shot!</label> </h3>
+            <input type="integer" class="form-control" id="guess" placeholder="Enter your guess here">
+          </div>
+          
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Is that your final answer?
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Check</button>
+        </form>
+
+        <p class="btn-group">
+          <a class="btn btn-success btn-lg" href="#">Restart the game</a>
+        </p> 
+
+        <h3 id='guessCount'> 5 Guesses Remaining </h3>
+
+      </div>
+
+      <div>
+        <p>Brought to you by Jimin Sung</p>
+      </div>
+    </div>
+  </body>
+</html>
