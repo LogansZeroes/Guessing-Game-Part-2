@@ -1,2 +1,4 @@
 # Guessing-Game-Part-1
-html &amp; css
+First part of the Guessing Game project.
+
+Using only HTML and CSS.
