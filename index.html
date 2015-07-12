@@ -3,52 +3,54 @@
   <head>
     <title>The Guessing Game by Jimin Sung</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="bootstrap.min.css" rel="stylesheet" media="screen">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
+
+  <div id="overlay"> <img src="img/happy.png">
+    <p1> Congratulations!</p1> </br>
+    <p2> Source: https://commons.wikimedia.org/wiki/File:Happy_smiley_face.png </p2>
+  </div>
+  
   <body>
     <div class="container">
       <header class="page-header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="rules.html">Game Manual</a></li>
+          <li><a href="rules.html"><font color="white">Game Manual</font></a></li>
         </ul>
-        <h3>Welcome to the Guessing Game by Jimin</h3>
+        <h3><font color = "white">Welcome to the Guessing Game</font></h3>
       </header>
       
-      <div class="jumbotron">
-        <h1>Can you beat the game?</h1>
-        <div class='main-box'></div>
+      <div class="main-box" style="width: 70%">
 
         <form>
-          <div class="form-group">
-            <h3> <label for="guess">Hit me with your best shot!</label> </h3>
-            <input type="integer" class="form-control" id="guess" placeholder="Enter your guess here">
-          </div>
-          
-          <div class="checkbox">
-            <label>
-              <input type="checkbox"> Is that your final answer?
-            </label>
-          </div>
-          <button type="submit" class="btn btn-default">Check answer</button>
+          <h3> <label for="guess">Hit me with your best shot!</label> </h3>
+
+            <input type="text" class="form-control" id='guess' placeholder="Enter your guess here">
+
         </form>
 
-        <p class="btn-group">
-          <a class="btn btn-success btn-lg" href="#">Restart the game</a>
-        </p> 
+        <a class='buttonGroup'>
+             <button type='button'id='check' class="btn btn-lg btn-check" background-color>Check Guess</button>
+             <button type='button'id='restart' class="btn btn-lg btn-hint">Restart</button>
+             <button type='button' id='answer' class= 'btn btn-lg btn-answer'>Answer</button>
+        </a>
 
-        <h3 id='guessCount'> 5 Guesses Remaining </h3>
+        <h3 id='guessCount'> </h3>
+
+        <h4 id='message'> </h4>
 
       </div>
-
+      </br>
+      
       <div>
-        <p>Brought to you by Jimin Sung</p>
+        <p><font color = "white"><b>Brought to you by Jimin Sung</b></font></p>
       </div>
+    
     </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
