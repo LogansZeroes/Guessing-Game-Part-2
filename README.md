@@ -12,4 +12,4 @@ JS file added using jQuery for the game to function as expected.
 
 New update now has 2 CSS files- bootstrap and a custom one.
 
-Images added for background and success overlay.
+Images added for background and success overlay. Taken from Wikimedia Commons.
