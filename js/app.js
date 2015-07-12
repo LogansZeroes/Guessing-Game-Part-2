@@ -43,37 +43,37 @@ function checkNumber(){
 	else {
 
 	 	if(numGuesses <= 0){
-			alert("Sorry, you lost!");
+			alert("Sorry, you lose!");
 			$guess.prop("disabled",true);
 			$btnCheck.prop("disabled",true);
 			$btnHint.prop("disabled",true);
 		}
 		 else if ( $guess.val() - secretNumber > 15 ){
-		 	alert ("You're as cold as ice! Guess lower.");
+		 	alert ("You're as cold as ice!\n\nGuess a lot lower.");
 		 	updateGuesses();
 		 }
 		 else if ( $guess.val() - secretNumber > 5 ){
-		 	alert ("You're getting warm! Guess lower.");
+		 	alert ("It's getting hot in here!\n\nGuess lower.");
 		 	updateGuesses();
 		 }
 		 else if ( $guess.val() > secretNumber ){
-		 	alert ("You're red hot! Guess lower.");
+		 	alert ("It burns, burns, burns. The ring of fire!\n\nGuess a little lower.");
 		 	updateGuesses();
 		 }
 		 else if ( secretNumber - $guess.val() > 15 ){
-		 	alert ("You're as cold as ice! Guess higher.");
+		 	alert ("You're as cold as ice!\n\nGuess a lot higher.");
 		 	updateGuesses();
 		 }
 		 else if ( secretNumber - $guess.val() > 5 ){
-		 	alert ("You're getting warm! Guess higher.");
+		 	alert ("It's getting hot in here!\n\nGuess higher.");
 		 	updateGuesses();
 		 }
 		 else if ( $guess.val() < secretNumber ){
-		 	alert ("You're red hot! Guess higher.");
+		 	alert ("It burns, burns, burns. The ring of fire!\n\nGuess a little higher.");
 		 	updateGuesses();
 		 }
 		 else if ($guess.val() == secretNumber){
-			alert("You win!!!");
+			alert("Next stop is victory; it's rushing like a train!!!\n\nYahoo! It's your celebration!");
 			$overlay.show();
 		 };
 
