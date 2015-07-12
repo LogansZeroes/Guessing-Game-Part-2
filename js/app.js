@@ -35,11 +35,12 @@ function updateGuesses() {
 
 function checkNumber(){
 
+	previousGuesses.push(parseInt($guess.val()));
+	
 	if (1> $guess.val() || 100 < $guess.val()) {
 		alert("Not a valid number!")
 	}
 	else {
-		previousGuesses.push(parseInt($guess.val()));
 
 	 	if(numGuesses <= 0){
 			alert("Sorry, you lost!");
