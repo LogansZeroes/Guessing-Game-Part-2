@@ -1,6 +1,7 @@
 body {
   /* background-color: rgb(223, 140, 140); */
   background: #2f558e url(../img/starry.jpg) repeat 0 0;
+  /* Image source: https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/A_starry_sky_above_Death_Valley_and_Orionid.jpg/441px-A_starry_sky_above_Death_Valley_and_Orionid.jpg */
   font-family: sans-serif;
   text-align: center;
 }
